@@ -277,7 +277,7 @@
             opacity: 0; animation: heroIn 1s var(--ease) forwards 1.3s;
         }
         .hero-actions {
-            display: flex; gap: 1rem; align-items: center;
+            display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;
             opacity: 0; animation: heroIn 1s var(--ease) forwards 1.5s;
         }
         .btn {
@@ -316,6 +316,35 @@
             border-color: var(--gold);
             color: var(--gold);
             background: var(--gold-light);
+        }
+        .btn-cv {
+            background: linear-gradient(135deg, var(--accent), var(--gold));
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-cv::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(135deg, var(--gold), var(--accent));
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        .btn-cv:hover::before { opacity: 1; }
+        .btn-cv:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(196,149,58,0.3);
+        }
+        .btn-cv span, .btn-cv-dark span { position: relative; z-index: 1; }
+        .btn-cv-dark {
+            background: transparent;
+            color: #fff;
+            border: 1.5px solid rgba(255,255,255,0.2);
+        }
+        .btn-cv-dark:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            background: rgba(224,173,74,0.08);
         }
         .hero-deco {
             position: absolute;
@@ -877,6 +906,7 @@
         <div class="hero-actions">
             <a class="btn btn-primary" onclick="go('projects')">Découvrir mes projets <span class="arrow">→</span></a>
             <a class="btn btn-ghost" onclick="go('contact')">Contact</a>
+            <a class="btn btn-cv" href="Cv-DPM.pdf" download="CV_Joma_Alfred_Moustaki.pdf">📄 Télécharger CV</a>
         </div>
     </div>
     <div class="hero-deco">
@@ -1012,6 +1042,7 @@
             <h4>Prêt à démarrer ?</h4>
             <p>Discutons de votre projet et voyons comment je peux vous aider à le réaliser.</p>
             <a href="mailto:jomaalfredm@gmail.com" class="btn btn-primary">Envoyer un message <span class="arrow">→</span></a>
+            <a class="btn btn-cv-dark" href="Cv-DPM.pdf" download="CV_Joma_Alfred_Moustaki.pdf" style="margin-top:0.8rem;">📄 Télécharger mon CV</a>
         </div>
     </div>
 </section>
