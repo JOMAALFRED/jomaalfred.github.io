@@ -958,7 +958,7 @@
             <p>Passionné de <strong>cybersécurité</strong> et participant actif aux compétitions CTF (CyberCup, CCOI26), j'utilise Parrot OS au quotidien et explore constamment de nouvelles technologies.</p>
         </div>
         <div class="metrics reveal">
-            <div class="metric"><div class="metric-val" data-count="6">0</div><div class="metric-label">Projets réalisés</div></div>
+            <div class="metric"><div class="metric-val" data-count="10">0</div><div class="metric-label">Projets réalisés</div></div>
             <div class="metric"><div class="metric-val" data-count="3">0</div><div class="metric-label">Années d'expérience</div></div>
             <div class="metric"><div class="metric-val" data-count="10">0</div><div class="metric-label">Technologies maîtrisées</div></div>
             <div class="metric"><div class="metric-val">CTF</div><div class="metric-label">Compétiteur actif</div></div>
@@ -1015,6 +1015,63 @@
         <div class="proj-img"><img src="img-dentalpm-dashboard.webp" alt="DentalPM — Dashboard de gestion"></div>
         <div><div class="proj-idx">06</div><h3 class="proj-title">DentalPM Mobile</h3><div class="proj-sub">APPLICATION MOBILE — EN COURS</div><p class="proj-desc">Portage mobile de la plateforme DentalPM pour le Google Play Store avec architecture React Native moderne.</p><div class="proj-stack"><span>React Native</span><span>Expo Router</span><span>Zustand</span><span>EAS Build</span></div></div>
     </div>
+
+    <div class="proj reveal">
+        <div class="proj-img" style="background:linear-gradient(135deg,#0d1117 0%,#161b22 100%);display:flex;align-items:center;justify-content:center;min-height:220px;">
+            <img src="https://merox.cloud/images/homelab-as-code/homelab-as-code-packer-terraform-ansible.png" alt="Homelab IaC — Ansible + Docker + WireGuard" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+        </div>
+        <div>
+            <div class="proj-idx">07</div>
+            <h3 class="proj-title">Homelab IaC</h3>
+            <div class="proj-sub">INFRASTRUCTURE AS CODE — ANSIBLE + WIREGUARD</div>
+            <p class="proj-desc">Infrastructure complète déployée par Ansible : Docker Engine, WireGuard VPN mesh (hub-and-spoke), stack monitoring Prometheus + Grafana + Loki, alertes CPU/RAM/disk, reverse proxy Traefik — zéro clic manuel.</p>
+            <div class="proj-stack"><span>Ansible</span><span>Docker Compose</span><span>WireGuard</span><span>Prometheus</span><span>Grafana</span><span>Loki</span><span>Traefik</span></div>
+            <a href="https://github.com/JOMAALFRED/Homelab-IaC" class="btn btn-primary" target="_blank">Voir sur GitHub <span class="arrow">→</span></a>
+        </div>
+    </div>
+
+    <div class="proj reveal">
+        <div class="proj-img" style="background:#0f1117;min-height:220px;overflow:hidden;border-radius:12px;">
+            <img src="https://grafana.com/media/blog/grafana-prometheus/grafana-prometheus-2.png" alt="Network Monitoring Dashboard — Temps réel" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+        </div>
+        <div>
+            <div class="proj-idx">08</div>
+            <h3 class="proj-title">Network Monitor</h3>
+            <div class="proj-sub">DASHBOARD RÉSEAU TEMPS RÉEL — WEBSOCKET</div>
+            <p class="proj-desc">Dashboard de monitoring réseau full-stack avec agents Bash collectant CPU, RAM, disk, latence ping et trafic réseau toutes les 30s. Backend Node.js + WebSocket pour push temps réel, frontend React + Recharts avec reconnexion automatique.</p>
+            <div class="proj-stack"><span>Node.js</span><span>WebSocket</span><span>React</span><span>Recharts</span><span>PostgreSQL</span><span>Bash</span><span>Zustand</span></div>
+            <a href="https://github.com/JOMAALFRED/-network-monitor" class="btn btn-primary" target="_blank">Voir sur GitHub <span class="arrow">→</span></a>
+        </div>
+    </div>
+
+    <div class="proj reveal">
+        <div class="proj-img" style="background:#0a0e1a;min-height:220px;overflow:hidden;border-radius:12px;">
+            <img src="https://ctfd.io/wp-content/uploads/2024/02/CTFd-Dashboard.png" alt="CTF Platform — Mini plateforme cybersécurité" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+        </div>
+        <div>
+            <div class="proj-idx">09</div>
+            <h3 class="proj-title">CTF Platform</h3>
+            <div class="proj-sub">PLATEFORME CYBERSÉCURITÉ SELF-HOSTED</div>
+            <p class="proj-desc">Mini plateforme CTF complète avec gestion d'équipes, soumission de flags bcrypt (timing-safe), rate limiting, scoreboard temps réel via WebSocket et challenges Docker isolés (réseau internal:true). Panel admin CRUD intégré.</p>
+            <div class="proj-stack"><span>Node.js</span><span>Express</span><span>React</span><span>PostgreSQL</span><span>Docker</span><span>JWT</span><span>WebSocket</span></div>
+            <a href="https://github.com/JOMAALFRED/ctf-platform" class="btn btn-primary" target="_blank">Voir sur GitHub <span class="arrow">→</span></a>
+        </div>
+    </div>
+
+    <div class="proj reveal">
+        <div class="proj-img" style="background:#f8fafc;min-height:220px;overflow:hidden;border-radius:12px;">
+            <img src="https://admin.uxpincdn.com/product/wp-content/uploads/2023/03/SaaS-Dashboard.png" alt="SaaS Boilerplate — Multi-tenant starter" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+        </div>
+        <div>
+            <div class="proj-idx">10</div>
+            <h3 class="proj-title">SaaS Boilerplate</h3>
+            <div class="proj-sub">STARTER MULTI-TENANT OPEN-SOURCE</div>
+            <p class="proj-desc">Boilerplate SaaS production-ready extrait de DentalPM : multi-tenancy, JWT dual-token (access 15min + refresh 7j avec rotation), RBAC 3 niveaux (superadmin/admin/user), trial 14j automatique, plans d'abonnement, Sequelize ORM et dashboard SuperAdmin.</p>
+            <div class="proj-stack"><span>Node.js</span><span>Express</span><span>React</span><span>Sequelize</span><span>PostgreSQL</span><span>JWT</span><span>Nodemailer</span></div>
+            <a href="https://github.com/JOMAALFRED/express-saas-starter" class="btn btn-primary" target="_blank">Voir sur GitHub <span class="arrow">→</span></a>
+        </div>
+    </div>
+
 </section>
 
 <!-- EXPERIENCE -->
